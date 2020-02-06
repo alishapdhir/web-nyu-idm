@@ -1,0 +1,156 @@
+<!-- this is the very first thing in an html document, it is not an HTML tag, despite looking like one, and tells the browser what version of HTML to use -->
+<!DOCTYPE html>
+<!-- this tells the browser that this is an html document and defines the root and layout -->
+<html>
+<!-- the head tag is an HTML tag that does not show anything in the browser but it contains other tags like title and heading.
+It also holds the CSS which is pretty cool!! -->
+  <head>
+    <!-- the title is what shows up in the browser tab! So when you open this webpage it'll say "Alisha's Webring" -->
+    <title>Alisha's Webring</title>
+<!-- the style tag is my favorite because it is where you get to make things pretty.
+This webpage happens to not be pretty at all because i was experimenting with different CSS styles instead of rEAally going for an aesthetic.
+The style tag holds the CSS that allow for a better user experience. The style must be inside the head tag. -->
+    <style>
+      /* CSS goes here */
+      /* this is how you modify html elements with css. you put their names (defined in html) with curly brackets and all the css information inside them */
+        body {
+          /* background color changes the background color of the document and because it is in the body itll change the whole thing. */
+          background-color: lightblue;
+          /* this will move the text to the center of the webpage by default but there are other css comands in different parts that will move them from the center */
+          text-align: center;
+          /* font size sets the size that the browser will start with, the headers and other tags will be sized down from herex */
+          font-size: 40px;
+          /* this will change the type family for the body, so you can choose fonts like helvetica, arial, verdana etc. However you choose the typeface with a different command */
+          font-family: helvetica;
+          /* Border style: outset will create a 3d looking border around your document content */
+          border-style: outset;
+          /* border-width tells the browser how thick to make the element's 4 borders.you can define this in pixels or using words like thin or thick */
+          border-width: thick;
+          /* border color defines the color of an element, but this color is subject to change in a 3d style border as the browser will add a shadow */
+          border-color: red;
+          /* border radius uses the measure of px (pixels) to round the corners of the default square border. */
+          border-radius: 20px;
+          /* text decoration sounds much more fun than it actually is. It is really just the option to put an underline, overline, or line through your text. */
+          text-decoration: underline;
+          /* text decoration style is where you can have fun with a boring underline! I changed mine to wavy but it could also be dashed and dotted. */
+          text-decoration-style: wavy;
+        }
+        /* hover is a CSS selector that will work when your mouse is over a defined part of the document. It can be used on all elements and any style you want can be added to it.
+        in this case, I had my background change to this crazy gradient when you mouse over the text. */
+        body:hover {
+          /* the background "image" does not need to be a separate image. In this case it is created within my code as a gradient. This goes in the body element */
+          background-image: repeating-linear-gradient(tomato, yellow 10%, hotpink 20%);
+        }
+        /* the active selector works when things are clicked. This tells the browser to perform whatever it is tasked with only while the mouse is being pressed. */
+        body:active{
+          /* filters are a property you can use to manipulate your elements with css. Some options include adding a blur, inverting, and changing the saturation. */
+          filter:invert(.8);
+        }
+        h1:hover {
+          /* text decoration line through is a css element that will modify your html text by putting a line through the text. */
+          text-decoration: line-through;
+          /* transform is a property you can add to different elements that will make you webpage come "alive."
+          I think transform is really fun because usually text elements dont move around on webpages. In this case my heading one will
+          rotate 30 degrees when a cursor hovers over it */
+          transform: rotate(30deg);
+        }
+        h1{
+          /* text indent creates an indent in a line of text just as a paragraph in an essay would. */
+          text-indent: 70px;
+          /* padding  adds space between an element's content and the border*/
+          padding-top: 50px;
+          /* color changes the color of an element! Using hex codes, rgb values, or color names. */
+          color: red;
+          /* this will move the text to the left of the browser page */
+          text-align: left;
+          /* text transform can change your capitalization within css, which is interesting because the text is written in HTML */
+          text-transform: uppercase;
+          /* relative position will tell the browser to position an element relative to the normal position.
+          However, it is not working here as there are no defined measurements. */
+          position: relative;
+          /* line height defines the space above and below the text elements */
+          line-height: 600px;
+          /* the blur filter blurs the HTML element via CSS. I think it adds a cool effect where it looks far away. */
+          filter:blur(3px)
+        }
+        p:hover {
+          /* text shadow can be used to create a 3d effect or just a cool type face. In this case it makes the text look 3d */
+          text-shadow: 2px 2px 4px #000000;
+          /* the scale transform function will stretch an element. In this case it is only stretched vertically as it is scaleY */
+          transform: scaleY(3.5);
+          /* opacity changes how translucent the element will be. This can be fun to layer with a blending mode. */
+          opacity: 0.5;
+        }
+        p{
+          /* font weight changes the typeface of the HTML element within a type family defined in body */
+          font-weight: bold;
+          /* this tells the browser what color to set the element to, however it can be manipulated once set through filters. */
+          color: orange;
+          /* The element is positioned to the right of the browser */
+          text-align: right;
+          /* word wrap is handy when your text is stretching off screen or exceeding the width of the browser so it wraps down to a new line */
+          word-wrap: break-word;
+        }
+        p2{
+          /* letter spacing is the tracking of the letters in an HTML element, not to be confused with kerning. */
+          letter-spacing: 15px;
+          /* in this case, the text shadow is not see through or blurred so it is just adds a collage-y look with a different color */
+          text-shadow: 5px 4px purple;
+          /* font style changes the typeface within a type family which is helvetica in this project */
+          font-style: italic;
+          /* this tells the browser via css what color, in this case green, to make the element */
+          color: green;
+          /* this CSS property creates a border around the element within it */
+          border: 5px solid red;
+          /* the outline is very similar to the border, but will be placed just outside the border. */
+          outline: 5px dotted white;
+          /* float works similarly to text align, except it moves any element */
+          float: left;
+        }
+        /* the hover tag tells the browser to activate elements and changes while your curser is on top of an element. */
+        p2:hover{
+          /* rotate 3d rotates an element in the x, y, and z directions */
+          transform:rotate3d(1, 1, 1, 45deg);
+        }
+        a{
+          /* color specfies the color of an element, here it is text. You can use many different color systems to specify. */
+          color: blue;
+        }
+        /* here, the hover tells the broswer what to do only when hovering over the link, even though it is embeded within p2 */
+        a:hover {
+          /* saturate uses css to change the saturation of a pre-defined color of an element */
+          filter: saturate(6);
+          /* hotpink is one of the prerecognized css colors. another one that i like a lot is tomato */
+          color: hotpink;
+          /* a linear gradient is different from a repeating gradient as it is just one flow of colors instead of a pattern */
+          background-image: linear-gradient(red, yellow);
+        }
+        /* visited is used to change an element after a user has clicked something. In this case, the link will change color after the user clicks it once. */
+        a:visited {
+        /* color specfies the color of an element, here it is text. You can use many different color systems to specify. */
+        color: yellow;
+        }
+      /* CSS STOPS here */
+    /* this closes the style tag and tells the browser that the CSS elements stop here */
+    </style>
+    <!-- this closes the head html tag, telling the broswer that there is no more styles, meta information, or scripts left to read. -->
+    </head>
+
+  <!-- HTML goes here! -->
+  <!-- The body tag contains all the information and elements in the html section. This can be links, text, images, and more -->
+    <body>
+      <!-- h1 is the first header. Text in html is organized into a hierarchy, and browsers read headings with a set of default values.
+      Headers will be smaller than the title. -->
+      <h1>Here come the planes.</h1>
+      <!-- P is the paragraph html tag, which like headers, will have a default list of settings. Paragraph styles are smaller than headings. -->
+      <p> So you better get ready </p>
+      <!-- html allows you to add multiple paragraphs by marking another down as p2, p3, and so on. -->
+      <!-- the a tag is an html link. part of the a tag is the href attribute that will tell the browser what the links destination is -->
+      <p2>ready to <a href="http://fionanicole.github.io/web-nyu-idm/here-come-the-planes">go</a>
+        <!-- closing the tags with the slash tells the browser when a certain element is closed and done -->
+      </p2>
+      <!-- closing the body tag indicates that there will be no more html information included in the document -->
+  </body>
+  <!-- closing the html tag tells the browser that the html elements are finished here -->
+</html>
+  <!-- HTML STOPS here! -->
