@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("images/lineys.png");
+  background-position: center;
+  background-color: #FFD9D9;
+  text-align: center;
+}
+
+#breathOne {
+  transform: scale(.45);
+}
+#breathetwo{
+  transform: scale(.35);
+}
+#breathethree{
+  transform: scale(.5);
+}
+
+#milktwo{
+  align-items: center;
+  transform: scale(.5);
+}
