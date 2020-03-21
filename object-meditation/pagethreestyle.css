@@ -12,6 +12,15 @@ body {
   background-color: #CFFFE6;
 }
 
+h1{
+  color: #07301c;
+  text-align: right;
+  font-family: "helvetica";
+}
+
+a:link{
+  text-decoration: none;
+}
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;

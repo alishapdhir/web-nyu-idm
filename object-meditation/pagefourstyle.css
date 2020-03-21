@@ -8,18 +8,19 @@ body {
 }
 
 #funland {
-  text-align: center;
+  margin-left: 200px;
   transform: scale(.4);
 }
 
 #venus {
+  margin-left: 500px;
   transform: scale(.5);
 }
 
 #boys {
-  transform: scale(.5);
+  transform: scale(.35);
 }
 
 #rings {
- transform: scale(.5);
+  transform: scale(.5);
 }
