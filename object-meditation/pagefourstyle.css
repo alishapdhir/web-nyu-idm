@@ -1,0 +1,25 @@
+html,
+body {
+}
+
+
+body {
+  background-color: #f9f4e5;
+}
+
+#funland {
+  text-align: center;
+  transform: scale(.4);
+}
+
+#venus {
+  transform: scale(.5);
+}
+
+#boys {
+  transform: scale(.5);
+}
+
+#rings {
+ transform: scale(.5);
+}
