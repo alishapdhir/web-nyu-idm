@@ -24,3 +24,33 @@ body {
   margin-right: auto;
  width: 40%;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+  #milktwo{
+    transform: scale(.65);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-image: none;
+  }
+  #milktwo{
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-image: radial-gradient(#FFD9D9, white);
+    }
+  #breathe{
+    visibility: hidden;
+    }
+  #milktwo{
+    transform: scale(1);
+  }
+}

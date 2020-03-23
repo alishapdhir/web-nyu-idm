@@ -6,15 +6,18 @@ body {
 body {
   background-color: #f9f4e5;
 }
+button{
+  border-width: 0px;
+  vertical-align: text-top;
 
+}
 #funland {
-  margin-left: 200px;
+  margin-right: 400px;
   transform: scale(.4);
 }
 
 #venus {
-  margin-left: 500px;
-  transform: scale(.5);
+  transform: scale(.35);
 }
 
 #boys {
@@ -22,5 +25,37 @@ body {
 }
 
 #rings {
-  transform: scale(.5);
+  transform: scale(.35);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+  }
+  #rings {
+    visibility: hidden;
+  }
+  #boys {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #rings {
+    visibility: hidden;
+  }
+  #venus {
+    visibility: hidden;
+  }
+  #boys {
+    visibility: hidden;
+  }
+  #funland {
+    transform: scale(.35);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-image: linear-gradient(#f9f4e5, white);
+    }
 }

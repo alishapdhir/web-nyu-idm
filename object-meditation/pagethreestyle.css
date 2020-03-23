@@ -10,19 +10,43 @@ body {
 
 body {
   background-color: #CFFFE6;
+  font-family: "helvetica";
 }
 
 h1{
   color: #07301c;
   text-align: right;
-  font-family: "helvetica";
 }
-
+h2{
+  visibility: hidden;
+  text-align: right;
+  color: #07301c;
+}
 a:link{
   text-decoration: none;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body {
-    background-color: lightblue;
+    background-image: linear-gradient(#CFFFE6, white);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-image: radial-gradient(#CFFFE6, white);
+    }
+  #giant{
+    visibility: hidden;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    visibility: visible;
   }
 }
