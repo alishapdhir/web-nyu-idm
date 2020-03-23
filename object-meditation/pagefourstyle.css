@@ -16,16 +16,23 @@ button{
   transform: scale(.4);
 }
 
+.home{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  transform: scale(.35);
+}
+
 #venus {
   transform: scale(.35);
 }
 
 #boys {
-  transform: scale(.35);
+  align-self: center;
 }
 
 #rings {
-  transform: scale(.35);
+  align-self: center;
 }
 
 @media screen and (max-width: 768px) {
