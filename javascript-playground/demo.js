@@ -4,6 +4,7 @@
 
 let namesArray = ['Kevin','McCoy','Emily','Frederic','Alisha','Ashli','Simon','Ty','Fiona','Prismo','Sammy','Caroline','Francesca','Karl','Esther','Irene','Martin','Yanxin','Katrina','Kiana'];
 
+//aray format: let array = [1,2,3]; data type is int or number
 //arrays ster from 0 not 1
 console.log(namesArray[0]);
 
@@ -17,13 +18,27 @@ function getRandom(max) {
 let n = getRandom(namesArray.length)
 let randomName = namesArray[n];
 
-console.log(namesArray.length)
+// console.log(namesArray.length)
 console.log(randomName);
 
 let arrayAsString = namesArray.join(', ')
 console.log(arrayAsString);
 
 
+let sortedNames = namesArray.sort();
+let text = "";
+
+// text += namesArray[0] + "<br>";
+// text += namesArray[1] + "<br>";
+// text += namesArray[2] + "<br>";
+// text += namesArray[3] + "<br>";
+// text += namesArray[4] + "<br>";
+
+for (i=0; i< namesArray.length; i++) {
+  text += namesArray[i] + " banana " + i + "<br>";
+}
+
+$('#listNames').html(text);
 
 $('#name').html(namesArray[n]);
 // $('#name').html(namesArray);
