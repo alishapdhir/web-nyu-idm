@@ -38,3 +38,4 @@ for (i=0; i< colors.length; i++) {
 
 //7. Create a div in the index.html with a unique id called whatever you want. Display the contents of your text variable to this div. Now you should have a list of 5 colors visible on your website.
 // push your edits to github!!
+$('#alishasid>p').html(text)
